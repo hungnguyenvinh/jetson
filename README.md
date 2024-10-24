@@ -46,8 +46,7 @@ The data for training, validation, and testing the model was downloaded from [Go
 - sad_path = "/home/nvinhhung/nvidia/data/faceEmotions/sad"
 
 ## packages are installed by pip
-Package                       Version
------------------------------ -------------------
+
 apt-clone                     0.2.1
 apturl                        0.5.2
 asn1crypto                    0.24.0
