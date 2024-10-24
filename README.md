@@ -1,4 +1,4 @@
-# Word Games using ASL Letter on Jetson Nano
+# Detect 6 facial emotions: anger, disgust, fear, happy, pain and sad
 
 Project based on image classification
 
