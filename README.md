@@ -38,3 +38,11 @@ File trainingEmotions.ipynb
 
 File live-detection.ipynb
 - Live detection face emotions
+
+The data for training, validation, and testing the model was downloaded from Google Drive https://drive.google.com/file/d/1NFapaYLKhER7Z4M_eP4tns9TQ3ywCZU9/view?usp=sharing. In the script trainingEmotions.ipynb, the data was divided as follows
+- anger_path = "/home/nvinhhung/nvidia/data/faceEmotions/anger"
+- disgust_path = "/home/nvinhhung/nvidia/data/faceEmotions/disgust"
+- fear_path = "/home/nvinhhung/nvidia/data/faceEmotions/fear"
+- happy_path = "/home/nvinhhung/nvidia/data/faceEmotions/happy"
+- pain_path = "/home/nvinhhung/nvidia/data/faceEmotions/pain"
+- sad_path = "/home/nvinhhung/nvidia/data/faceEmotions/sad"
