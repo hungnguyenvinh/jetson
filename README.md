@@ -14,9 +14,7 @@ Jetpack 4.6.1 (L4T R32.6.1)
 
 ## Dependencies
 
-- [Pytorch 1.10 - torchvision 0.11.1](https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048)
 - [jetcam](https://github.com/NVIDIA-AI-IOT/jetcam)
-- [Jetson.GPIO - Linux for Tegra](https://github.com/NVIDIA/jetson-gpio)
 - [opencv](https://github.com/opencv/opencv)
 - [Jupyter Lab](https://jupyter.org/)
 
@@ -39,7 +37,7 @@ File trainingEmotions.ipynb
 File live-detection.ipynb
 - Live detection face emotions
 
-The data for training, validation, and testing the model was downloaded from Google Drive https://drive.google.com/file/d/1NFapaYLKhER7Z4M_eP4tns9TQ3ywCZU9/view?usp=sharing. In the script trainingEmotions.ipynb, the data was divided as follows
+The data for training, validation, and testing the model was downloaded from [Google Drive](https://drive.google.com/file/d/1NFapaYLKhER7Z4M_eP4tns9TQ3ywCZU9/view?usp=sharing). In the script trainingEmotions.ipynb, the data was divided as follows
 - anger_path = "/home/nvinhhung/nvidia/data/faceEmotions/anger"
 - disgust_path = "/home/nvinhhung/nvidia/data/faceEmotions/disgust"
 - fear_path = "/home/nvinhhung/nvidia/data/faceEmotions/fear"
