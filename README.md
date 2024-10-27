@@ -52,27 +52,27 @@ pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compu
 (replace v46 by your Jetpack version)
 
 ## some commands to install lib and env
-sudo apt-get install python3-pip
-sudo apt-get install python3-pip libopenblas-base libopenmpi-dev libomp-dev
-wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-aarch64.sh
-chmod +x Miniforge3-Linux-aarch64.sh
-./Miniforge3-Linux-aarch64.sh
-(add more 'export PATH="$HOME/miniconda3/bin:$PATH"' into your .bashrc)
-source ~/.bashrc
-conda --version
-conda create -n myenv python=3.6.9
-conda activate myenv
-conda install h5py
-conda install pip
-pip3 install jupyterlab
-pip3 install 'Cython<3'
-pip3 install pillow
-pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v46 tensorflow
-pip install opencv-python
-pip install pandas
-pip install seaborn
-pip install scikit-learn
-pip install matplotlib
+- sudo apt-get install python3-pip
+- sudo apt-get install python3-pip libopenblas-base libopenmpi-dev libomp-dev
+- wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-aarch64.sh
+- chmod +x Miniforge3-Linux-aarch64.sh
+- ./Miniforge3-Linux-aarch64.sh
+- (add more 'export PATH="$HOME/miniconda3/bin:$PATH"' into your .bashrc)
+- source ~/.bashrc
+- conda --version
+- conda create -n myenv python=3.6.9
+- conda activate myenv
+- conda install h5py
+- conda install pip
+- pip3 install jupyterlab
+- pip3 install 'Cython<3'
+- pip3 install pillow
+- pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v46 tensorflow
+- pip install opencv-python
+- pip install pandas
+- pip install seaborn
+- pip install scikit-learn
+- pip install matplotlib
 
 
 ## packages are installed by pip
