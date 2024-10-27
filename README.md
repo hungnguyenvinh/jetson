@@ -72,6 +72,8 @@ wiki: https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform
 
 wiki: https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html)
 
+- pip uninstall keras
+- pip install keras==2.6
 - pip install opencv-python
 - pip install pandas
 - pip install seaborn
