@@ -1,4 +1,4 @@
-# Detect 6 facial emotions: anger, disgust, fear, happy, pain and sad
+# Detect 6 facial emotions: anger, disgust, fear, happy, pain and sad with EfficientNetB0 
 
 Project based on image classification
 
