@@ -66,9 +66,10 @@ pip3 install --extra-index-url https://developer.download.nvidia.com/compute/red
 - pip3 install jupyterlab
 - pip3 install 'Cython<3'
 - pip3 install pillow
-- pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v46 tensorflow
-- (wiki: https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html#overview__section_z4r_vjd_v2c)
-- (wiki: https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html)
+- pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v461 tensorflow==2.7.0+nv22.01
+wiki: https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html#overview__section_z4r_vjd_v2c)
+
+wiki: https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html)
 - pip install opencv-python
 - pip install pandas
 - pip install seaborn
