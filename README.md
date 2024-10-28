@@ -8,7 +8,7 @@ Project based on image classification
 
 OS Ubuntu 18.04.6
 
-Jetpack 4.4 (L4T R32.7.5)
+Jetpack 4.6.3 (L4T R32.7.5)
 
 [Flashed following this wiki page](https://www.waveshare.com/wiki/JETSON-NANO-DEV-KIT)
 
