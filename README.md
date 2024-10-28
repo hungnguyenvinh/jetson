@@ -48,7 +48,7 @@ The data for training, validation, and testing the model was downloaded from [Go
 ## Some note
 - To install the libraries needed to run the above script, I used a virtual environment created with Conda.
 - Install TensorFlow using the following command to use the GPU provided by NVIDIA.
-pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v461 tensorflow==2.7.0+nv22.01
+pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v46 tensorflow==2.5.0+nv21.08
 
 ## some commands to install lib and env
 - sudo apt-get install python3-pip
@@ -66,7 +66,7 @@ pip3 install --extra-index-url https://developer.download.nvidia.com/compute/red
 - pip3 install jupyterlab
 - pip3 install 'Cython<3'
 - pip3 install pillow
-- pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v461 tensorflow==2.7.0+nv22.01
+- pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v46 tensorflow==2.5.0+nv21.08
 
 wiki: https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html#overview__section_z4r_vjd_v2c)
 
