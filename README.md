@@ -62,6 +62,7 @@ pip3 install --extra-index-url https://developer.download.nvidia.com/compute/red
 - conda create -n myenv python=3.6.9
 - conda activate myenv
 - conda install pip
+- pip install h5py
 - pip3 install -U numpy grpcio absl-py py-cpuinfo psutil portpicker six mock requests gast h5py astor termcolor protobuf keras-applications keras-preprocessing wrapt google-pasta setuptools testresources
 - pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v46 tensorflow==2.5.0+nv21.08
 - pip3 install jupyterlab
