@@ -61,12 +61,13 @@ pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compu
 - conda --version
 - conda create -n myenv python=3.6.9
 - conda activate myenv
-- conda install h5py
 - conda install pip
+- pip3 install -U numpy grpcio absl-py py-cpuinfo psutil portpicker six mock requests gast h5py astor termcolor protobuf keras-applications keras-preprocessing wrapt google-pasta setuptools testresources
+- pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v46 tensorflow==2.5.0+nv21.08
 - pip3 install jupyterlab
 - pip3 install 'Cython<3'
 - pip3 install pillow
-- pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v46 tensorflow==2.5.0+nv21.08
+- pip install opencv-python
 
 wiki: https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html#overview__section_z4r_vjd_v2c)
 
