@@ -48,7 +48,7 @@ The data for training, validation, and testing the model was downloaded from [Go
 ## Some note
 - To install the libraries needed to run the above script, I used a virtual environment created with Conda.
 - Install TensorFlow using the following command to use the GPU provided by NVIDIA.
-pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v46 tensorflow==2.5.0+nv21.08
+pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v46 tensorflow==2.5.0+nv21.08
 
 ## some commands to install lib and env
 - sudo apt-get install python3-pip
@@ -63,7 +63,7 @@ pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compu
 - conda activate myenv
 - conda install pip
 - pip3 install -U numpy grpcio absl-py py-cpuinfo psutil portpicker six mock requests gast h5py astor termcolor protobuf keras-applications keras-preprocessing wrapt google-pasta setuptools testresources
-- pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v46 tensorflow==2.5.0+nv21.08
+- pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v46 tensorflow==2.5.0+nv21.08
 - pip3 install jupyterlab
 - pip3 install 'Cython<3'
 - pip3 install pillow
