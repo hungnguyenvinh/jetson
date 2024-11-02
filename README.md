@@ -37,7 +37,7 @@ File trainingEmotions.ipynb
 File live-detection.ipynb
 - Live detection face emotions
 
-The data for training, validation, and testing the model was downloaded from [Google Drive](https://drive.google.com/file/d/1NFapaYLKhER7Z4M_eP4tns9TQ3ywCZU9/view?usp=sharing). In the script trainingEmotions.ipynb, the data was divided as folders following: anger, disgust, fear, happy, pain and sad.
+The data for training, validation, and testing the model was downloaded from [Google Drive](https://drive.google.com/file/d/1hcZSaeVNsJEkFV_jsjclOm6gV3qYm0LV/view?usp=sharing). In the script training.ipynb, the data was divided as folders following: anger, disgust, fear, happy, pain and sad.
 
 ## Some note
 - To install the libraries needed to run the above script, I used a virtual environment created with Conda.
