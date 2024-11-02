@@ -105,12 +105,12 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr -D OPENCV_EXTRA_M
 - Finish the install:<br>
 cd \~<br>
 sudo rm -r /usr/include/opencv4/opencv2<br>
-cd ~/opencv/build<br>
+cd \~/opencv/build<br>
 sudo make install<br>
 sudo ldconfig<br>
 make clean<br>
 sudo apt-get update<br>
-add more 'export PYTHONPATH=$PYTHONPATH:~/opencv/build/python_loader' into your .bashrc
+add more 'export PYTHONPATH=$PYTHONPATH:\~/opencv/build/python_loader' into your .bashrc
 
 #### Download JoloV9:
 - Refer [github](https://github.com/spacewalk01/yolov9-face-detection.git) <br>
