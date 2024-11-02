@@ -115,3 +115,6 @@ add more 'export PYTHONPATH=$PYTHONPATH:\~/opencv/build/python_loader' into your
 ### Download JoloV9:
 - Refer [github](https://github.com/spacewalk01/yolov9-face-detection.git) <br>
 - Grant permission to access your camera: sudo chmod 666 /dev/video0
+
+### Download the training model
+[googleDrive](https://drive.google.com/file/d/1X37nm8B9TJFNFo_EJx-l0ICLP3WftIxs/view?usp=sharing) <br>
