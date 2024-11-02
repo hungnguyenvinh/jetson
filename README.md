@@ -31,11 +31,14 @@ jupyter lab --ip xx.xx.xx.xx --port 8888 --no-browser
 ```
 Where xx.xx.xx.xx is your current ip in ifconfig, after this, other PCs in the same network can use xx.xx.xx.xx:8888 to access it, there should be token showed in the console where you run the command, use it for authentication
 
-File trainingEmotions.ipynb
+File trainingScript.ipynb
 - Use to train the model
 
-File live-detection.ipynb
-- Live detection face emotions
+File testImageScript.ipynb
+- Using the model after training, to predic some images
+
+File testCameraScript.ipynb
+- Using the model after training, to detect face/person in camera frame then detection emotions
 
 The data for training, validation, and testing the model was downloaded from [Google Drive](https://drive.google.com/file/d/1hcZSaeVNsJEkFV_jsjclOm6gV3qYm0LV/view?usp=sharing). In the script training.ipynb, the data was divided as folders following: anger, disgust, fear, happy, pain and sad.
 
