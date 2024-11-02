@@ -82,7 +82,8 @@ The data for training, validation, and testing the model was downloaded from [Go
 - sudo apt-get install liblapack-dev libeigen3-dev gfortran
 - sudo apt-get install libhdf5-dev protobuf-compiler
 - sudo apt-get install libprotobuf-dev libgoogle-glog-dev libgflags-dev
-#### Download and Install opencv
+#### Download and Install opencv:
+- refer [youtube](https://www.youtube.com/watch?v=P-EZr0zy53g&list=PLv8Cp2NvcY8AkXRldCAYCvFxRUs0h5JJF&index=3) <br>
 - Download OpenCV: <br>
 cd ~ <br>
 wget -O opencv.zip https://github.com/opencv/opencv/archive/4.5.1.zip <br>
@@ -115,3 +116,8 @@ sudo make install <br>
 sudo ldconfig <br>
 make clean <br>
 sudo apt-get update <br>
+add more 'export PYTHONPATH=$PYTHONPATH:~/opencv/build/python_loader' into your .bashrc
+
+#### Download JoloV9:
+- refer [github](https://github.com/spacewalk01/yolov9-face-detection.git) <br>
+- grant permission to access your camera: sudo chmod 666 /dev/video0
