@@ -57,18 +57,61 @@ The data for training, validation, and testing the model was downloaded from [Go
 - conda activate myenv
 - conda install pip
 - pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v46 tensorflow==2.6.2+nv21.12
-- 
+- wget https://nvidia.box.com/shared/static/fjtbno0vpo676a25cgvuqc1wty0fkkg6.whl
+- pip3 install torch-1.10.0-cp36-cp36m-linux_aarch64.whl
 - pip3 install jupyterlab
-- pip3 install 'Cython<3'
-- pip3 install pillow
-- pip install opencv-python
+- pip3 install 'Cython<3' pillow keras==2.6 pandas seaborn scikit-learn matplotlib
 
+### How to install opencv
+#### Install these Dependencies before installing OpenCV
+- sudo sh -c "echo '/usr/local/cuda/lib64' >> /etc/ld.so.conf.d/nvidia-tegra.conf“
+- sudo ldconfig
+- sudo apt-get install build-essential cmake git unzip pkg-config
+- sudo apt-get install libjpeg-dev libpng-dev libtiff-dev
+- sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev
+- sudo apt-get install libgtk2.0-dev libcanberra-gtk*
+- sudo apt-get install python3-dev python3-numpy python3-pip
+- sudo apt-get install libxvidcore-dev libx264-dev libgtk-3-dev
+- sudo apt-get install libtbb2 libtbb-dev libdc1394-22-dev
+- sudo apt-get install libv4l-dev v4l-utils
+- sudo apt-get install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
+- sudo apt-get install libavresample-dev libvorbis-dev libxine2-dev
+- sudo apt-get install libfaac-dev libmp3lame-dev libtheora-dev
+- sudo apt-get install libopencore-amrnb-dev libopencore-amrwb-dev
+- sudo apt-get install libopenblas-dev libatlas-base-dev libblas-dev
+- sudo apt-get install liblapack-dev libeigen3-dev gfortran
+- sudo apt-get install libhdf5-dev protobuf-compiler
+- sudo apt-get install libprotobuf-dev libgoogle-glog-dev libgflags-dev
+#### Download and Install opencv
+- Download OpenCV: <br>
+cd ~ <br>
+wget -O opencv.zip https://github.com/opencv/opencv/archive/4.5.1.zip <br>
+wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/4.5.1.zip <br>
+unzip opencv.zip <br>
+unzip opencv_contrib.zip <br>
 
+- Now rename the directories. Type each command below, one after the other. <br>
+mv opencv-4.5.1 opencv <br>
+mv opencv_contrib-4.5.1 opencv_contrib <br>
+rm opencv.zip <br>
+rm opencv_contrib.zip <br>
 
-- pip uninstall keras
-- pip install keras==2.6
-- pip install opencv-python
-- pip install pandas
-- pip install seaborn
-- pip install scikit-learn
-- pip install matplotlib
+- Lets build OpenCV now: <br>
+cd ~/opencv <br>
+mkdir build <br>
+cd build <br>
+
+- copy and paste this entire block of commands below into your terminal. <br>
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules -D EIGEN_INCLUDE_PATH=/usr/include/eigen3 -D WITH_OPENCL=OFF -D WITH_CUDA=ON -D CUDA_ARCH_BIN=5.3 -D CUDA_ARCH_PTX="" -D WITH_CUDNN=ON -D WITH_CUBLAS=ON -D ENABLE_FAST_MATH=ON -D CUDA_FAST_MATH=ON -D OPENCV_DNN_CUDA=ON -D ENABLE_NEON=ON -D WITH_QT=OFF -D WITH_OPENMP=ON -D WITH_OPENGL=ON -D BUILD_TIFF=ON -D WITH_FFMPEG=ON -D WITH_GSTREAMER=ON -D WITH_TBB=ON -D BUILD_TBB=ON -D BUILD_TESTS=OFF -D WITH_EIGEN=ON -D WITH_V4L=ON -D WITH_LIBV4L=ON -D OPENCV_ENABLE_NONFREE=ON -D INSTALL_C_EXAMPLES=OFF -D INSTALL_PYTHON_EXAMPLES=OFF -D BUILD_NEW_PYTHON_SUPPORT=ON -D BUILD_opencv_python3=TRUE -D OPENCV_GENERATE_PKGCONFIG=ON -D BUILD_EXAMPLES=OFF ..
+
+- Build OpenCV. This command below will take a long time (around 2 hours), make -j4     # (make then space single dash and then j4) <br>
+
+- Finish the install: <br>
+cd ~ <br>
+sudo rm -r /usr/include/opencv4/opencv2 <br>
+cd ~/opencv/build <br>
+sudo make install <br>
+sudo ldconfig <br>
+make clean <br>
+sudo apt-get update <br>
