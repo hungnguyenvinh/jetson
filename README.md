@@ -116,7 +116,7 @@ sudo apt-get update<br>
 add more 'export PYTHONPATH=$PYTHONPATH:\~/opencv/build/python_loader' into your .bashrc
 
 ### Download JoloV9:
-- Refer [github](https://github.com/spacewalk01/yolov9-face-detection.git) <br>
+- Refer [github](https://github.com/WongKinYiu/yolov9) <br>
 - Grant permission to access your camera: sudo chmod 666 /dev/video0
 
 ### Download the training model
